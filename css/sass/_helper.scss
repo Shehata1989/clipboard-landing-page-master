@@ -1,0 +1,40 @@
+
+@mixin grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-content: center;
+  gap: 40px;
+}
+
+@mixin reset-link {
+  text-decoration: none;
+  display: inline-block;
+}
+
+@mixin media ($point) {
+  @if ($point == mobile) {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if ($point == extra-mobile) {
+    @media (max-width: 991px) {
+      @content;
+    }
+  }
+}
+
+%title-head {
+  max-width: 800px;
+  text-align: center;
+  margin: 100px auto;
+  h2 {
+    font-size: 25px;
+    margin: 0;
+    color: $Dark-Grayish-Blue;
+  }
+  p {
+    color: $Grayish-Blue;
+    line-height: 1.6;
+  }
+}

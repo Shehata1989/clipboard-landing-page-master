@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+.snippets .title-head, .access-clipboard .title-head, .supercharge .title-head {
+  max-width: 800px;
+  text-align: center;
+  margin: 100px auto; }
+  .snippets .title-head h2, .access-clipboard .title-head h2, .supercharge .title-head h2 {
+    font-size: 25px;
+    margin: 0;
+    color: #4c545d; }
+  .snippets .title-head p, .access-clipboard .title-head p, .supercharge .title-head p {
+    color: #9fabb2;
+    line-height: 1.6; }
+
+/*! Fonts Google*/
+/*! End Fonts Google*/
+/*! Global Rules*/
+* {
+  box-sizing: border-box;
+  font-size: 18px; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Bai Jamjuree", sans-serif; }
+
+p {
+  color: #9fabb2;
+  line-height: 1.6; }
+
+h1,
+h2,
+h3 {
+  color: #4c545d;
+  margin: 0; }
+
+/*! End Global Rules*/
+header {
+  background: url(../images/bg-header-desktop.png) center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  place-content: center; }
+  header .heading {
+    max-width: 550px;
+    margin-top: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center; }
+    header .heading img {
+      width: 80px; }
+    header .heading .text h1 {
+      margin: 25px 0; }
+      @media (max-width: 767px) {
+        header .heading .text h1 {
+          font-size: 25px; } }
+    header .heading .text p {
+      margin: 0 0 30px;
+      line-height: 1.6; }
+    @media (max-width: 767px) {
+      header .heading .btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px; } }
+    header .heading .btn a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 50px;
+      color: white;
+      width: 183px; }
+    header .heading .btn a:first-child {
+      background-color: #26baa4;
+      margin-right: 10px; }
+      @media (max-width: 767px) {
+        header .heading .btn a:first-child {
+          margin: 0; } }
+    header .heading .btn a:last-child {
+      background-color: #6173ff; }
+
+.snippets .sec-content {
+  display: flex;
+  align-items: center;
+  gap: 50px; }
+  @media (max-width: 767px) {
+    .snippets .sec-content {
+      flex-direction: column; } }
+  .snippets .sec-content .image img {
+    max-width: 100%;
+    transform: translateX(-50px); }
+    @media (max-width: 767px) {
+      .snippets .sec-content .image img {
+        transform: translateX(0); } }
+  @media (max-width: 767px) {
+    .snippets .sec-content .info {
+      text-align: center; } }
+  .snippets .sec-content .info .row {
+    max-width: 400px;
+    margin-bottom: 50px; }
+    .snippets .sec-content .info .row p {
+      margin: 10px 0; }
+
+.access-clipboard .sec-content .image {
+  text-align: center; }
+  .access-clipboard .sec-content .image img {
+    max-width: 100%; }
+
+.supercharge .sec-content {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .supercharge .sec-content .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-content: center;
+    gap: 40px;
+    width: 80%; }
+    @media (max-width: 767px) {
+      .supercharge .sec-content .container {
+        display: block; } }
+    @media (max-width: 991px) {
+      .supercharge .sec-content .container {
+        grid-template-columns: repeat(2, 1fr); } }
+    .supercharge .sec-content .container .col {
+      text-align: center; }
+      @media (max-width: 767px) {
+        .supercharge .sec-content .container .col {
+          margin-bottom: 50px; } }
+      .supercharge .sec-content .container .col img {
+        margin-bottom: 30px; }
+.supercharge .vendor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 100px;
+  margin-bottom: 100px; }
+  .supercharge .vendor img {
+    max-width: 100%; }
+
+.download {
+  display: grid;
+  place-content: center;
+  margin-bottom: 100px; }
+  .download .container {
+    max-width: 550px;
+    margin-top: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center; }
+    @media (max-width: 767px) {
+      .download .container h1 {
+        font-size: 25px; } }
+    .download .container p {
+      margin: 20px 0 30px; }
+    @media (max-width: 767px) {
+      .download .container .btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px; } }
+    .download .container .btn a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 50px;
+      color: white;
+      width: 183px; }
+    .download .container .btn a:first-child {
+      background-color: #26baa4;
+      margin-right: 10px; }
+      @media (max-width: 767px) {
+        .download .container .btn a:first-child {
+          margin: 0; } }
+    .download .container .btn a:last-child {
+      background-color: #6173ff; }
+
+.footer {
+  display: grid;
+  place-content: center;
+  background-color: #eee;
+  padding: 50px; }
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px; }
+    @media (max-width: 767px) {
+      .footer .container {
+        flex-direction: column; } }
+    .footer .container img {
+      width: 80px; }
+    .footer .container .info {
+      flex: 1;
+      text-align: center; }
+      .footer .container .info a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 20px;
+        font-weight: 600;
+        color: #4c545d;
+        transition: 0.3s; }
+        @media (max-width: 767px) {
+          .footer .container .info a {
+            display: block; } }
+        .footer .container .info a:hover {
+          color: #26baa4; }
+    .footer .container .social img {
+      width: 20px;
+      margin-left: 10px;
+      cursor: pointer; }
+
+/*# sourceMappingURL=main.css.map */
